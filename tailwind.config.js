@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['Manrope', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        marca: ['Montserrat', 'Manrope', 'ui-sans-serif', 'sans-serif'],
+        serif: ['Montserrat', 'Manrope', 'ui-sans-serif', 'sans-serif'],
       },
     },
   },

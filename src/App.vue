@@ -1,105 +1,102 @@
 <template>
-  <main class="min-h-screen overflow-hidden bg-[#030303] text-stone-100 selection:bg-[#d7b35f]/30">
+  <main class="min-h-screen overflow-hidden bg-[#082f34] text-[#f1ede4] selection:bg-[#b8aa97]/30">
     <div class="pointer-events-none fixed inset-0 opacity-80">
-      <div class="blob-float-a absolute left-1/2 top-[-18rem] h-[44rem] w-[44rem] -translate-x-1/2 rounded-full bg-[#d7b35f]/10 blur-3xl" />
-      <div class="blob-float-b absolute right-[-14rem] top-[20rem] h-[34rem] w-[34rem] rounded-full bg-[#9f7b35]/10 blur-3xl" />
-      <div class="blob-float-c absolute bottom-[-18rem] left-[-12rem] h-[36rem] w-[36rem] rounded-full bg-[#d7b35f]/8 blur-3xl" />
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0,transparent_38%,#030303_75%)]" />
+      <div class="blob-float-a absolute left-1/2 top-[-18rem] h-[44rem] w-[44rem] -translate-x-1/2 rounded-full bg-[#b8aa97]/6 blur-3xl" />
+      <div class="blob-float-b absolute right-[-14rem] top-[20rem] h-[34rem] w-[34rem] rounded-full bg-[#8b7b66]/6 blur-3xl" />
+      <div class="blob-float-c absolute bottom-[-18rem] left-[-12rem] h-[36rem] w-[36rem] rounded-full bg-[#b8aa97]/5 blur-3xl" />
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0,transparent_38%,#082f34_75%)]" />
     </div>
 
     <nav class="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-8">
       <a href="#" class="group flex items-center gap-4">
-        <div class="flex h-12 w-12 items-center justify-center rounded-2xl border border-[#d7b35f]/25 bg-black p-2 shadow-[0_0_35px_rgba(215,179,95,.18)] transition group-hover:shadow-[0_0_45px_rgba(215,179,95,.32)]">
+        <div class="flex h-12 w-12 items-center justify-center rounded-2xl border border-[#b8aa97]/25 bg-[#041c20] p-2 transition">
           <ArccoMark />
         </div>
         <div>
-          <p class="font-serif text-2xl font-light leading-none tracking-[0.5em] text-[#d7b35f]">
+          <p class="font-marca text-2xl font-extrabold leading-none tracking-tight text-[#d9cec0]">
             ARCCO
           </p>
-          <p class="mt-1.5 text-[10px] uppercase tracking-[0.42em] text-stone-400">
+          <p class="mt-1.5 text-[10px] uppercase tracking-[0.42em] text-[#d9cec0]/80">
             Inteligência Comercial
           </p>
         </div>
       </a>
 
-      <a href="#contato" class="hidden rounded-full border border-[#d7b35f]/30 px-5 py-2 text-sm text-[#e6cf91] transition hover:border-[#d7b35f] hover:bg-[#d7b35f]/10 hover:shadow-[0_0_24px_rgba(215,179,95,.18)] md:block">
-        Agendar apresentação
+      <a href="#contato" class="hidden rounded-full border border-[#b8aa97]/30 px-5 py-2 text-sm text-[#d9cec0] transition hover:border-[#b8aa97] hover:bg-[#b8aa97]/10 md:block">
+        Falar no WhatsApp
       </a>
     </nav>
 
     <section class="relative z-10 mx-auto grid max-w-7xl items-center gap-12 px-6 pb-24 pt-14 lg:grid-cols-[1.08fr_.92fr] lg:px-8 lg:pb-32 lg:pt-20">
       <div class="animate-fade-up">
-        <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-[#d7b35f]/20 bg-[#d7b35f]/10 px-4 py-2 text-sm text-[#e6cf91] shadow-[0_0_30px_rgba(215,179,95,.08)]">
+        <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-[#b8aa97]/20 bg-[#b8aa97]/10 px-4 py-2 text-sm text-[#d9cec0]">
           <Sparkles class="h-4 w-4" />
-          Tecnologia comercial para construção civil
+          Tecnologia comercial para quem vende à obra
         </div>
 
-        <h1 class="max-w-4xl font-serif text-5xl leading-[0.98] tracking-tight text-white md:text-7xl lg:text-8xl">
-          Dados da obra.
-          <span class="title-shimmer block bg-[linear-gradient(110deg,#f4dc98_0%,#d7b35f_35%,#f4dc98_55%,#8f6c2e_75%,#f4dc98_100%)] bg-clip-text text-transparent">
-            Fluxos no controle.
+        <h1 class="fonte-marca max-w-4xl text-5xl leading-[0.98] tracking-tight text-[#fffdf9] md:text-7xl lg:text-8xl">
+          A fala vira
+          <span class="title-shimmer block bg-[linear-gradient(110deg,#f1ede4_0%,#b8aa97_35%,#f1ede4_55%,#8b7b66_75%,#f1ede4_100%)] bg-clip-text text-transparent">
+            pedido.
           </span>
         </h1>
 
-        <p class="mt-7 max-w-2xl text-lg leading-8 text-stone-300 md:text-xl">
-          A ARCCO transforma conversas, pedidos e prazos em uma operação comercial inteligente para construtoras, arquitetos e empresas de materiais de construção.
+        <p class="mt-7 max-w-2xl text-lg leading-8 text-[#d9cec0] md:text-xl">
+          CRM e WhatsApp para iluminação, concreto, piso, esquadria, material e serviço. O comercial continua no chat — o quadro é que passa a nascer dali.
         </p>
 
         <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-          <a href="#contato" class="cta-glow group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#f1d98c] to-[#b98d3b] px-7 py-4 font-medium text-black shadow-[0_18px_70px_rgba(215,179,95,.25)] transition hover:scale-[1.02]">
-            Quero modernizar minha operação
+          <a :href="whatsappLink" class="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#f1ede4] to-[#b8aa97] px-7 py-4 font-medium text-[#082f34] transition hover:scale-[1.02]">
+            Falar no WhatsApp
             <ArrowRight class="h-5 w-5 transition group-hover:translate-x-1" />
           </a>
-          <a href="#solucao" class="inline-flex items-center justify-center rounded-full border border-white/10 px-7 py-4 font-medium text-stone-200 transition hover:border-[#d7b35f]/40 hover:bg-white/5">
-            Ver solução
+          <a href="#solucao" class="inline-flex items-center justify-center rounded-full border border-[#f1ede4]/10 px-7 py-4 font-medium text-[#f1ede4] transition hover:border-[#b8aa97]/40 hover:bg-[#f1ede4]/5">
+            Ver como funciona
           </a>
         </div>
+        <ul class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-[13px] font-medium tracking-tight text-[#d9cec0]/80">
+          <li v-for="ramo in ramos" :key="ramo">{{ ramo }}</li>
+        </ul>
       </div>
 
       <div class="relative mx-auto w-full max-w-xl animate-scale-in">
-        <div class="absolute inset-0 rounded-[3rem] bg-[#d7b35f]/20 blur-3xl" />
-        <div class="panel-float relative overflow-hidden rounded-[3rem] border border-[#d7b35f]/20 bg-[#090806]/80 p-6 shadow-2xl backdrop-blur-xl">
-          <div class="pointer-events-none absolute left-1/2 top-2 w-72 -translate-x-1/2 md:w-80">
-            <ArccoMark decorative />
+        <div class="absolute inset-0 rounded-[2.2rem] bg-[#041c20]/40 blur-3xl" />
+        <div class="panel-float relative rounded-[2.2rem] border border-[#f1ede4]/10 bg-[#041c20]/80 p-6 shadow-[0_24px_48px_-20px_rgba(4,28,32,.55)] backdrop-blur-xl">
+          <div class="mb-5 flex items-center justify-between">
+            <div>
+              <p class="text-xs uppercase tracking-[0.34em] text-[#b8aa97]">Pedido agora</p>
+              <h2 class="mt-2 text-2xl font-semibold">Iluminação · Lourdes</h2>
+            </div>
+            <div class="pulse-dot rounded-full bg-emerald-400/10 py-1 pl-5 pr-3 text-xs text-emerald-300">online</div>
           </div>
 
-          <div class="relative mt-44 rounded-[2.2rem] border border-white/10 bg-black/65 p-6">
-            <div class="mb-5 flex items-center justify-between">
-              <div>
-                <p class="text-xs uppercase tracking-[0.34em] text-[#d7b35f]">Painel ARCCO</p>
-                <h2 class="mt-2 text-2xl font-semibold">Obras em andamento</h2>
+          <div class="space-y-3">
+            <div
+              v-for="(item, idx) in dashboardItems"
+              :key="item.label"
+              class="rounded-2xl border border-[#f1ede4]/8 bg-[#f1ede4]/[0.035] p-4 transition hover:border-[#b8aa97]/30 hover:bg-[#b8aa97]/5"
+              data-reveal
+              :data-reveal-delay="idx * 120"
+            >
+              <div class="mb-1 flex items-center justify-between text-xs uppercase tracking-[0.22em] text-[#b8aa97]/70">
+                <span>{{ item.label }}</span>
+                <CheckCircle2 class="h-4 w-4 text-[#b8aa97]" />
               </div>
-              <div class="pulse-dot rounded-full bg-emerald-400/10 py-1 pl-5 pr-3 text-xs text-emerald-300">online</div>
+              <p class="text-base text-[#f1ede4]">{{ item.value }}</p>
+              <p class="mt-1 text-sm text-[#b8aa97]/70">{{ item.sub }}</p>
             </div>
+          </div>
 
-            <div class="space-y-3">
-              <div
-                v-for="(item, idx) in dashboardItems"
-                :key="item.label"
-                class="rounded-2xl border border-white/8 bg-white/[0.035] p-4 transition hover:border-[#d7b35f]/30 hover:bg-[#d7b35f]/5"
-                data-reveal
-                :data-reveal-delay="idx * 120"
-              >
-                <div class="mb-1 flex items-center justify-between text-xs uppercase tracking-[0.22em] text-stone-500">
-                  <span>{{ item.label }}</span>
-                  <CheckCircle2 class="h-4 w-4 text-[#d7b35f]" />
-                </div>
-                <p class="text-base text-stone-100">{{ item.value }}</p>
-                <p class="mt-1 text-sm text-stone-500">{{ item.sub }}</p>
-              </div>
-            </div>
-
-            <div class="mt-5 grid grid-cols-3 gap-3">
-              <div
-                v-for="(stat, idx) in stats"
-                :key="stat.label"
-                class="rounded-2xl bg-[#d7b35f]/10 p-4 text-center transition hover:bg-[#d7b35f]/20"
-                data-reveal="zoom"
-                :data-reveal-delay="400 + idx * 110"
-              >
-                <p class="font-serif text-2xl text-[#f1d98c]">{{ stat.number }}</p>
-                <p class="mt-1 text-xs text-stone-400">{{ stat.label }}</p>
-              </div>
+          <div class="mt-5 grid grid-cols-3 gap-3">
+            <div
+              v-for="(stat, idx) in stats"
+              :key="stat.label"
+              class="rounded-2xl bg-[#b8aa97]/10 p-4 text-center transition hover:bg-[#b8aa97]/20"
+              data-reveal="zoom"
+              :data-reveal-delay="400 + idx * 110"
+            >
+              <p class="fonte-marca text-2xl text-[#d9cec0]">{{ stat.number }}</p>
+              <p class="mt-1 text-xs text-[#d9cec0]/80">{{ stat.label }}</p>
             </div>
           </div>
         </div>
@@ -107,18 +104,18 @@
     </section>
 
     <section id="solucao" class="relative z-10 py-24">
-      <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-white/[0.018] to-transparent" />
-      <div class="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#d7b35f]/25 to-transparent" />
-      <div class="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#d7b35f]/25 to-transparent" />
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-[#f1ede4]/[0.018] to-transparent" />
+      <div class="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#b8aa97]/25 to-transparent" />
+      <div class="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#b8aa97]/25 to-transparent" />
 
       <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-3xl text-center">
-          <p class="text-sm uppercase tracking-[0.34em] text-[#d7b35f]" data-reveal>O que entregamos</p>
-          <h2 class="mt-4 font-serif text-4xl text-white md:text-6xl" data-reveal data-reveal-delay="120">
-            Uma camada de inteligência sobre sua operação
+          <p class="text-sm uppercase tracking-[0.34em] text-[#b8aa97]" data-reveal>O que a ARCCO faz</p>
+          <h2 class="fonte-marca mt-4 text-4xl text-[#fffdf9] md:text-6xl" data-reveal data-reveal-delay="120">
+            Não é para quem constrói. É para quem vende para a obra.
           </h2>
-          <p class="mt-5 text-lg leading-8 text-stone-400" data-reveal data-reveal-delay="220">
-            Criamos automações e sistemas comerciais sob medida para empresas que precisam transformar atendimento em dados, e dados em decisão.
+          <p class="mt-5 text-lg leading-8 text-[#d9cec0]/80" data-reveal data-reveal-delay="220">
+            Cada empresa com o seu WhatsApp, o seu funil e o seu estoque. O bot faz a triagem; o atendente entra quando precisa.
           </p>
         </div>
 
@@ -126,15 +123,15 @@
           <article
             v-for="(service, idx) in services"
             :key="service.title"
-            class="card-lift group rounded-[2rem] border border-white/10 bg-[#080808]/80 p-6 hover:border-[#d7b35f]/35 hover:bg-[#0d0b06]"
+            class="card-lift group rounded-[2rem] border border-[#f1ede4]/10 bg-[#073b42]/80 p-6 hover:border-[#b8aa97]/35 hover:bg-[#0d4a51]"
             data-reveal
             :data-reveal-delay="idx * 130"
           >
-            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#d7b35f]/10 text-[#f1d98c] ring-1 ring-[#d7b35f]/20 transition group-hover:bg-[#d7b35f]/20 group-hover:ring-[#d7b35f]/40">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#b8aa97]/10 text-[#d9cec0] ring-1 ring-[#b8aa97]/20 transition group-hover:bg-[#b8aa97]/20 group-hover:ring-[#b8aa97]/40">
               <component :is="service.icon" class="h-6 w-6" />
             </div>
-            <h3 class="text-xl font-semibold text-white">{{ service.title }}</h3>
-            <p class="mt-3 leading-7 text-stone-400">{{ service.text }}</p>
+            <h3 class="text-xl font-semibold text-[#fffdf9]">{{ service.title }}</h3>
+            <p class="mt-3 leading-7 text-[#d9cec0]/80">{{ service.text }}</p>
           </article>
         </div>
       </div>
@@ -142,30 +139,30 @@
 
     <section class="relative z-10 mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[.9fr_1.1fr] lg:px-8">
       <div>
-        <p class="text-sm uppercase tracking-[0.34em] text-[#d7b35f]" data-reveal="left">Método ARCCO</p>
-        <h2 class="mt-4 font-serif text-4xl text-white md:text-6xl" data-reveal="left" data-reveal-delay="100">
-          Da conversa ao controle operacional
+        <p class="text-sm uppercase tracking-[0.34em] text-[#b8aa97]" data-reveal="left">Como entra</p>
+        <h2 class="fonte-marca mt-4 text-4xl text-[#fffdf9] md:text-6xl" data-reveal="left" data-reveal-delay="100">
+          Do WhatsApp ao quadro, sem recopy
         </h2>
-        <p class="mt-6 text-lg leading-8 text-stone-400" data-reveal="left" data-reveal-delay="200">
-          Nossa estética comunica precisão, sofisticação e autoridade. Nossa tecnologia entrega o que a construção precisa: clareza, velocidade e rastreabilidade.
+        <p class="mt-6 text-lg leading-8 text-[#d9cec0]/80" data-reveal="left" data-reveal-delay="200">
+          O time não abandona o chat. A ARCCO escuta o pedido, monta o card e mostra se tem lote — no ramo certo.
         </p>
       </div>
 
-      <div class="rounded-[2.6rem] border border-white/10 bg-[#080808]/80 p-5 md:p-8" data-reveal="right">
+      <div class="rounded-[2.6rem] border border-[#f1ede4]/10 bg-[#073b42]/80 p-5 md:p-8" data-reveal="right">
         <div class="space-y-4">
           <div
             v-for="(step, index) in steps"
-            :key="step"
-            class="flex gap-5 rounded-[1.6rem] border border-white/8 bg-white/[0.035] p-5 transition hover:border-[#d7b35f]/30 hover:bg-[#0d0b06]"
+            :key="step.title"
+            class="flex gap-5 rounded-[1.6rem] border border-[#f1ede4]/8 bg-[#f1ede4]/[0.035] p-5 transition hover:border-[#b8aa97]/30 hover:bg-[#0d4a51]"
             data-reveal="right"
             :data-reveal-delay="index * 140 + 200"
           >
-            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#f1d98c] to-[#9b742e] font-serif text-xl text-black shadow-[0_0_24px_rgba(215,179,95,.4)]">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f1ede4] font-marca text-xl font-extrabold text-[#082f34]">
               {{ index + 1 }}
             </div>
             <div>
-              <h3 class="text-lg font-semibold text-white">{{ step }}</h3>
-              <p class="mt-1 text-stone-500">Processo simples, visual e pensado para virar rotina dentro da empresa.</p>
+              <h3 class="text-lg font-semibold text-[#fffdf9]">{{ step.title }}</h3>
+              <p class="mt-1 text-[#b8aa97]/70">{{ step.text }}</p>
             </div>
           </div>
         </div>
@@ -173,39 +170,39 @@
     </section>
 
     <section class="relative z-10 mx-auto max-w-7xl px-6 pb-24 lg:px-8">
-      <div class="grid overflow-hidden rounded-[3rem] border border-[#d7b35f]/20 bg-gradient-to-br from-[#100d07] to-[#030303] lg:grid-cols-3">
+      <div class="grid overflow-hidden rounded-[3rem] border border-[#b8aa97]/20 bg-gradient-to-br from-[#073b42] to-[#082f34] lg:grid-cols-3">
         <div
           v-for="(item, idx) in highlights"
           :key="item.title"
-          class="border-white/10 p-8 transition hover:bg-[#d7b35f]/5 lg:border-r last:border-r-0"
+          class="border-[#f1ede4]/10 p-8 transition hover:bg-[#b8aa97]/5 lg:border-r last:border-r-0"
           data-reveal
           :data-reveal-delay="idx * 150"
         >
-          <component :is="item.icon" class="h-8 w-8 text-[#d7b35f]" />
-          <h3 class="mt-6 text-2xl font-semibold text-white">{{ item.title }}</h3>
-          <p class="mt-3 leading-7 text-stone-400">{{ item.text }}</p>
+          <component :is="item.icon" class="h-8 w-8 text-[#b8aa97]" />
+          <h3 class="mt-6 text-2xl font-semibold text-[#fffdf9]">{{ item.title }}</h3>
+          <p class="mt-3 leading-7 text-[#d9cec0]/80">{{ item.text }}</p>
         </div>
       </div>
     </section>
 
     <section id="contato" class="relative z-10 mx-auto max-w-5xl px-6 pb-28 text-center lg:px-8">
-      <div class="rounded-[3rem] border border-[#d7b35f]/25 bg-[#070604]/90 p-10 shadow-[0_0_90px_rgba(215,179,95,.12)] md:p-16" data-reveal="zoom">
-        <div class="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-3xl bg-[#d7b35f]/10 text-[#f1d98c] ring-1 ring-[#d7b35f]/25">
+      <div class="rounded-[3rem] border border-[#b8aa97]/25 bg-[#041c20]/90 p-10 md:p-16" data-reveal="zoom">
+        <div class="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-3xl bg-[#b8aa97]/10 text-[#d9cec0] ring-1 ring-[#b8aa97]/25">
           <Users class="h-8 w-8" />
         </div>
-        <p class="text-sm uppercase tracking-[0.34em] text-[#d7b35f]">Pronto para escalar?</p>
-        <h2 class="mt-4 font-serif text-4xl text-white md:text-6xl">Transforme atendimento em inteligência comercial</h2>
-        <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-stone-400">
-          Fale com a ARCCO e veja como automatizar coleta de dados, acompanhamento de obras, relacionamento com clientes e gestão comercial.
+        <p class="text-sm uppercase tracking-[0.34em] text-[#b8aa97]">Uma volta no seu ramo</p>
+        <h2 class="fonte-marca mt-4 text-4xl text-[#fffdf9] md:text-6xl">Manda o WhatsApp. A gente mostra o expediente.</h2>
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#d9cec0]/80">
+          Sem cadastro e sem teatro de software. Iluminação, concreto, piso, esquadria, material ou serviço — o chat é o mesmo; o quadro muda.
         </p>
-        <a :href="whatsappLink" class="cta-glow mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#f1d98c] to-[#b98d3b] px-8 py-4 font-medium text-black shadow-[0_18px_70px_rgba(215,179,95,.25)] transition hover:scale-[1.02]">
+        <a :href="whatsappLink" class="mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#f1ede4] to-[#b8aa97] px-8 py-4 font-medium text-[#082f34] transition hover:scale-[1.02]">
           Chamar no WhatsApp
           <ArrowRight class="h-5 w-5" />
         </a>
       </div>
     </section>
 
-    <footer class="relative z-10 px-6 py-10 text-center text-xs uppercase tracking-[0.42em] text-stone-500 lg:px-8">
+    <footer class="relative z-10 px-6 py-10 text-center text-xs uppercase tracking-[0.42em] text-[#b8aa97]/70 lg:px-8">
       © {{ new Date().getFullYear() }} ARCCO · Inteligência Comercial
     </footer>
   </main>
@@ -214,17 +211,16 @@
 <script setup>
 import {
   ArrowRight,
-  Building2,
   Bot,
   CheckCircle2,
-  DatabaseZap,
   Gauge,
   MessageCircle,
+  Package,
   ShieldCheck,
   Sparkles,
   Users,
   Workflow,
-} from 'lucide-vue-next'
+} from '@/icons'
 
 import ArccoMark from '@/components/ArccoMark.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
@@ -233,75 +229,89 @@ useScrollReveal()
 
 const whatsappLink = 'https://wa.me/5500000000000'
 
+const ramos = ['Iluminação', 'Concreto', 'Piso', 'Esquadria', 'Material', 'Serviço']
+
 const dashboardItems = [
   {
-    label: 'Cliente',
-    value: 'Construtora Horizonte',
-    sub: 'Atualizado via WhatsApp',
+    label: 'WhatsApp',
+    value: '40 luminárias IP65',
+    sub: 'Obra em Lourdes · veio do chat',
   },
   {
-    label: 'Entrega',
-    value: 'Porcelanato — 22/05',
-    sub: 'Confirmação pendente',
+    label: 'Prazo',
+    value: 'Sexta',
+    sub: 'Quem assina: engenharia',
   },
   {
-    label: 'Projeto',
-    value: 'Residencial Alto Jardim',
-    sub: 'Etapa: acabamento',
+    label: 'Funil',
+    value: 'Andamento',
+    sub: 'Sem copiar do grupo',
   },
 ]
 
 const stats = [
-  { number: '24/7', label: 'coleta ativa' },
-  { number: '100%', label: 'dados organizados' },
-  { number: '+obra', label: 'menos ruído' },
+  { number: 'Chat', label: 'bot + humano' },
+  { number: 'Obra', label: 'no card' },
+  { number: 'Lote', label: 'no radar' },
 ]
 
 const services = [
   {
     icon: MessageCircle,
-    title: 'Coleta automática pelo WhatsApp',
-    text: 'Fluxos inteligentes perguntam, organizam e atualizam dados de clientes, entregas, prazos e obras sem depender de planilhas soltas.',
-  },
-  {
-    icon: DatabaseZap,
-    title: 'Banco de dados comercial vivo',
-    text: 'Cada resposta vira informação estruturada: cliente, projeto, etapa, status, histórico e próximos passos prontos para consulta.',
+    title: 'WhatsApp com chatbot',
+    text: 'O bot pergunta metragem, prazo e quem assina. Se emperrar, passa para o atendente — o comercial não some no grupo.',
   },
   {
     icon: Workflow,
-    title: 'Gestão do fluxo da obra',
-    text: 'Construtoras, arquitetos e distribuidores acompanham múltiplos projetos com clareza sobre pedidos, entregas e pendências.',
+    title: 'Funil que nasce da conversa',
+    text: 'A oportunidade vira card com obra, volume e prazo. O time vê o quadro, não um print de ontem.',
   },
   {
     icon: Bot,
-    title: 'Automação com inteligência',
-    text: 'Assistentes digitais reduzem retrabalho, padronizam o atendimento e mantêm o time comercial sempre informado.',
+    title: 'CRM multiempresa',
+    text: 'Contatos, obras do cliente e atividades no mesmo expediente — cada empresa com o seu ramo e o seu WhatsApp.',
+  },
+  {
+    icon: Package,
+    title: 'Estoque do que você vende',
+    text: 'O pedido encontra o lote. Se faltar, o card espera — não vende o que não tem.',
   },
 ]
 
 const steps = [
-  'Mapeamos o processo atual da empresa',
-  'Criamos o fluxo de atendimento e coleta',
-  'Integramos WhatsApp, banco de dados e painel',
-  'Otimizamos a rotina comercial e operacional',
+  {
+    title: 'O comercial continua no WhatsApp',
+    text: 'Ninguém troca de tela para anotar. O pedido chega onde já chega.',
+  },
+  {
+    title: 'O bot confirma o que o grupo esquece',
+    text: 'Obra, prazo, volume e quem assina — antes de virar “já te falei”.',
+  },
+  {
+    title: 'O card entra no funil',
+    text: 'Andamento com os dados certos. Sem recopy, sem planilha paralela.',
+  },
+  {
+    title: 'O lote entra no radar',
+    text: 'Se controla estoque, a reserva aparece. Se faltar, o pedido não some.',
+  },
 ]
 
 const highlights = [
   {
-    icon: Building2,
-    title: 'Construção civil',
-    text: 'Linguagem, processos e dores reais do setor.',
+    icon: Users,
+    title: 'Quem vende para a obra',
+    text: 'Iluminação, concreto, piso, esquadria, material, serviço — não é ferramenta de construtora.',
   },
   {
     icon: Gauge,
-    title: 'Operação rápida',
-    text: 'Menos mensagens perdidas, mais previsibilidade.',
+    title: 'O grupo deixa de ser o CRM',
+    text: 'Menos áudio perdido, menos “me manda de novo”, mais previsibilidade no comercial.',
   },
   {
     icon: ShieldCheck,
-    title: 'Dados confiáveis',
-    text: 'Histórico estruturado para decisões comerciais.',
+    title: 'Pedido, funil e estoque juntos',
+    text: 'O mesmo expediente. Sem inventar número: o quadro mostra o que o chat já fechou.',
   },
 ]
 </script>

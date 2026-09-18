@@ -40,6 +40,7 @@ defineProps({
   object-fit: contain;
   user-select: none;
   -webkit-user-drag: none;
+  filter: brightness(0) invert(1);
 }
 
 .arcco-mark--animated {
@@ -48,7 +49,7 @@ defineProps({
 }
 
 .arcco-mark--decorative {
-  opacity: 0.55;
+  opacity: 0.2;
   animation: arcco-float 9s ease-in-out infinite;
 }
 
