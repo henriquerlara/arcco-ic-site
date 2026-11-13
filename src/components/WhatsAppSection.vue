@@ -1,5 +1,6 @@
 <script setup>
 import { useTemplateRef } from "vue";
+import ArrowIcon from "./ArrowIcon.vue";
 import { whatsapp } from "../data/institucional";
 import { useSceneMotion } from "../composables/useMotion";
 
@@ -21,7 +22,7 @@ useSceneMotion(root);
         <p class="body-copy">{{ whatsapp.text }}</p>
         <a class="chapter-next" :href="whatsapp.next.href">
           {{ whatsapp.next.label }}
-          <span class="arrow" aria-hidden="true">↓</span>
+          <ArrowIcon direction="down" />
         </a>
       </div>
       <ol

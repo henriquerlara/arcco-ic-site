@@ -1,5 +1,6 @@
 <script setup>
 import BrandMark from "./BrandMark.vue";
+import ArrowIcon from "./ArrowIcon.vue";
 import { hero } from "../data/institucional";
 import { useTemplateRef } from "vue";
 import { useSceneMotion } from "../composables/useMotion";
@@ -42,12 +43,12 @@ useSceneMotion(root);
         </h1>
         <p class="hero-support">{{ hero.support }}</p>
         <a class="action action--light" href="#solucao"
-          >{{ hero.action }} <span class="arrow" aria-hidden="true">↗</span></a
-        >
+          >{{ hero.action }} <ArrowIcon
+        /></a>
       </div>
       <a class="hero-scroll" href="#solucao"
-        >A plataforma, por inteiro. <span aria-hidden="true">↓</span></a
-      >
+        >A plataforma, por inteiro. <ArrowIcon direction="down"
+      /></a>
     </div>
   </section>
 </template>

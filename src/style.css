@@ -161,6 +161,10 @@ h2 {
 }
 .arrow {
   display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  vertical-align: middle;
   font-size: 22px;
   line-height: 1;
   transition: transform 180ms var(--ease);
@@ -249,11 +253,11 @@ h2 {
   font-size: 11px;
   color: #d8e1d9;
 }
-.hero-scroll > span {
+.hero-scroll > .arrow {
   font-size: 19px;
   transition: transform 180ms;
 }
-.hero-scroll:hover > span {
+.hero-scroll:hover > .arrow {
   transform: translateY(3px);
 }
 .index-number {
@@ -499,11 +503,11 @@ h2 {
   text-underline-offset: 5px;
   color: #fff;
 }
-.footer-end a > span {
+.footer-end a > .arrow {
   font-size: 17px;
   transition: transform 180ms;
 }
-.footer-end a:hover > span {
+.footer-end a:hover > .arrow {
   transform: translateY(-3px);
 }
 @keyframes photo-entry {

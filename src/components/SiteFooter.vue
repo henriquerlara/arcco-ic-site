@@ -1,5 +1,6 @@
 <script setup>
 import BrandMark from "./BrandMark.vue";
+import ArrowIcon from "./ArrowIcon.vue";
 import { empresa } from "../data/institucional";
 </script>
 <template>
@@ -14,9 +15,7 @@ import { empresa } from "../data/institucional";
       <p class="footer-id">{{ empresa.razao }}<br />CNPJ: {{ empresa.cnpj }}</p>
       <div class="footer-end">
         <span>© {{ new Date().getFullYear() }} ARCCO</span
-        ><a href="#inicio"
-          >Voltar ao início <span aria-hidden="true">↑</span></a
-        >
+        ><a href="#inicio">Voltar ao início <ArrowIcon direction="up" /></a>
       </div>
     </div>
   </footer>

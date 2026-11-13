@@ -1,5 +1,6 @@
 <script setup>
 import { useTemplateRef } from "vue";
+import ArrowIcon from "./ArrowIcon.vue";
 import { introduction, areas } from "../data/institucional";
 import { useSceneMotion } from "../composables/useMotion";
 const root = useTemplateRef("root");
@@ -46,8 +47,8 @@ useSceneMotion(root);
         <a v-for="area in areas" :key="area.id" :href="`#${area.id}`"
           ><span class="index-number">{{ area.number }} /</span
           ><span>{{ area.name }}</span
-          ><span class="arrow" aria-hidden="true">↗</span></a
-        >
+          ><ArrowIcon
+        /></a>
       </div>
     </div>
   </section>

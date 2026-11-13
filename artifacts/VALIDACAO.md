@@ -49,3 +49,9 @@ Correção posterior da emenda no responsivo: degradês inferiores com faixa fin
 - Retirado o parágrafo redundante da seção. Textos das áreas mais diretos e fechamento voltado ao resultado no dia a dia, sem repetir as funcionalidades já detalhadas.
 - Preservados layout, imagens, altura das seções, tema azul de Operação, degradês e interações. Nenhuma nova funcionalidade ou destino comercial anunciado.
 - Build com pré-renderização, dois testes e `git diff --check` passaram. HTML final conferido, incluindo os três públicos e a ausência dos termos de atendimento rejeitados. Sem inspeção no navegador, conforme preferência do usuário.
+
+## Setas consistentes no mobile — 13/11/2026
+
+- Setas Unicode substituídas por um componente SVG compartilhado, com traço na cor do texto. Direções e movimentos de hover preservados.
+- Ícones decorativos ocultos dos leitores de tela e fora do foco de teclado; dimensões em `em` mantêm os tamanhos de cada controle.
+- Build com pré-renderização e `git diff --check` passaram. Conferidas 10 setas SVG no HTML final e nenhuma seta como caractere de texto. Sem nova inspeção no navegador.

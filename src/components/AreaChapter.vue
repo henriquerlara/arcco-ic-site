@@ -2,6 +2,7 @@
 import { useTemplateRef } from "vue";
 import { useSceneMotion } from "../composables/useMotion";
 import ModuleAccordion from "./ModuleAccordion.vue";
+import ArrowIcon from "./ArrowIcon.vue";
 defineProps({
   area: { type: Object, required: true },
   reverse: { type: Boolean, default: false },
@@ -50,9 +51,8 @@ useSceneMotion(root);
         </p>
         <h2 :id="`${area.id}-title`">{{ area.title }}</h2>
         <a class="chapter-next" :href="area.next.href"
-          >{{ area.next.label }}
-          <span class="arrow" aria-hidden="true">↓</span></a
-        >
+          >{{ area.next.label }} <ArrowIcon direction="down"
+        /></a>
       </div>
       <div class="story-copy" data-reveal="copy">
         <p class="body-copy">{{ area.text }}</p>

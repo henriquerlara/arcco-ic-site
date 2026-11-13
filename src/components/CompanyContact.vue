@@ -1,5 +1,6 @@
 <script setup>
 import { useTemplateRef } from "vue";
+import ArrowIcon from "./ArrowIcon.vue";
 import { contact } from "../config/contact";
 import { fechamento } from "../data/institucional";
 import { useSceneMotion } from "../composables/useMotion";
@@ -26,9 +27,8 @@ useSceneMotion(root);
           :href="contact.href"
           target="_blank"
           rel="noopener noreferrer"
-          >{{ contact.label }}
-          <span class="arrow" aria-hidden="true">↗</span></a
-        >
+          >{{ contact.label }} <ArrowIcon
+        /></a>
       </div>
       <div class="product-context" data-reveal="copy">
         <dl class="product-summary">
