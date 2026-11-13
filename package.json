@@ -3,11 +3,12 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "ARCCO — Inteligência comercial para construção civil. Landing page institucional.",
+  "description": "ARCCO — Plataforma de gestão e automação comercial para quem fornece para a construção.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "test": "node --test scripts/contact.test.mjs"
   },
   "dependencies": {
     "vue": "^3.5.13"
